@@ -1,12 +1,12 @@
 #include <unistd.h>
 
 /**
- * Main - Entry point
+ * main - Entry point
  *
- * Description: print out text without puts or printf
+ * Description: print a quote using write function
  *
- * Return: 1
- */
+ * Return:  Error 1.
+*/
 
 int main(void)
 {
