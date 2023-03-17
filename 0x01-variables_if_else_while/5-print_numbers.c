@@ -3,21 +3,20 @@
 /**
  * main - Entry point
  *
- * Description: Print all aplhabet letters
+ * Description: Print all single digits
  *
  * Return: Always 0 (Success)
-*/
+ */
 
 int main(void)
 {
-	char ch = 'a';
+	int n;
 
-	while (ch <= 'z')
+	for (n = 0; n <= 9; n++)
 	{
-		putchar(ch);
-		ch++;
+		printf("%d", n);
 	}
-	putchar('\n');
+	printf("\n");
 
 	return (0);
 }
