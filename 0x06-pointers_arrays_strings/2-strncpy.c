@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy - function that concatenates two strings
- *      appends the src string to the dest string
+ * _strncpy - function that copies a string
  *
  * @dest: char type arg of the function
  * @src: char type arg of the function
