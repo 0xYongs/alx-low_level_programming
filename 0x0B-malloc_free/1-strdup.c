@@ -11,18 +11,23 @@
 
 char *_strdup(char *str)
 {
-	char *cp = malloc(strlen(str) + 1);
-
+/**	int i = 0, size = 0;
+*	*char *a;
+*/
+	char *cp;
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	if (cp == NULL)
-		return (NULL);
+/**	for (; str[size] != '\0'; size++)
+*		;
+*/
+	cp = malloc(strlen(str) + 1);
 
-	if (cp != NULL)
+	if (cp == NULL)
 	{
-		strcpy(cp, str);
+		return (NULL);
 	}
+	return (strcpy(cp, str));
 	return (cp);
 }
