@@ -21,7 +21,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	/*find length of bot s1 and s2 respectively*/
+	/*find length of both s1 and s2 respectively*/
 	a = strlen(s1);
 	b = strlen(s2);
 
@@ -37,7 +37,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s[i] = s1[i];
 
 	/*add s2 n bytes to s*/
-	for (j = 0; s2[j] != '\0'; j++)
+	for (j = 0; j < n && s2[j] != '\0'; j++)
 	{
 		s[i] = s2[j];
 		i++;
