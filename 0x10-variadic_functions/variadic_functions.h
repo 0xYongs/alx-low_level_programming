@@ -9,6 +9,13 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
+/**
+ * struct printTypeStruct - structure definition
+ *
+ * @type: data type
+ * @printer:  function to point
+ */
+
 typedef struct printTypeStruct
 {
 	char *type;
